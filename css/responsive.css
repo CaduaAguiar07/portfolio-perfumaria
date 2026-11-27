@@ -1,0 +1,416 @@
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .navegacao {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .apresentacao {
+        padding: 60px 6%;
+        gap: 5%;
+    }
+
+    .apresentacao h1 {
+        font-size: 64px;
+    }
+
+    .categoria {
+        padding: 30px;
+    }
+
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    .navegacao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 6%;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .apresentacao {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 50px 6% 70px;
+    }
+
+    .apresentacao h1 {
+        font-size: clamp(42px, 10vw, 65px);
+    }
+
+    .apresentacao p {
+        font-size: 15px;
+    }
+
+    .subtitulo {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .apresentacao-imagem {
+        max-width: 350px;
+        width: calc(100% - 16px);
+    }
+
+    .estatisticas {
+        padding: 25px 3%;
+    }
+
+    .estatistica {
+        padding: 10px 5px;
+    }
+
+    .estatistica strong {
+        font-size: 42px;
+    }
+
+    .estatistica span {
+        font-size: 10px;
+    }
+
+    .universo,
+    .conhecimento,
+    .colecao-destaque {
+        padding: 65px 6%;
+    }
+
+    .categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria {
+        min-height: 220px;
+        padding: 30px;
+    }
+
+    .categoria h3 {
+        font-size: 32px;
+    }
+
+    .conhecimento article h3 {
+        font-size: 30px;
+    }
+
+    .rodape {
+        padding: 35px 6%;
+    }
+
+}
+
+/* Celulares pequenos */
+@media (max-width: 380px) {
+
+    .apresentacao h1 {
+        font-size: 40px;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .estatistica strong {
+        font-size: 34px;
+    }
+
+}
+/* ========================================
+   NOVA APRESENTAÇÃO RESPONSIVA
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .apresentacao-texto {
+        padding: 60px 8%;
+    }
+
+    .apresentacao h1 {
+        font-size: 48px;
+    }
+
+    .apresentacao-imagem {
+        min-height: 550px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .apresentacao {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 0;
+        gap: 0;
+    }
+
+    .apresentacao-texto {
+        padding: 60px 7% 35px;
+    }
+
+    .apresentacao h1 {
+        font-size: clamp(36px, 8vw, 52px);
+        letter-spacing: -1px;
+    }
+
+    .apresentacao p {
+        font-size: 16px;
+    }
+
+    .apresentacao-imagem {
+        width: 100%;
+        height: 520px;
+        min-height: 0;
+    }
+
+    .apresentacao-imagem img {
+        object-position: center 40%;
+    }
+
+    /* Degradê vertical no celular */
+
+    .apresentacao-imagem::after {
+        background: linear-gradient(
+            to bottom,
+            #0e359d 0%,
+            rgba(14, 53, 157, 0.65) 12%,
+            rgba(14, 53, 157, 0) 35%
+        );
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .apresentacao h1 {
+        font-size: 34px;
+    }
+
+    .apresentacao-imagem {
+        height: 400px;
+    }
+
+}
+/* Responsividade das páginas educativas */
+
+@media (max-width: 1024px) {
+
+    .perfumes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caracteristicas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .categoria-hero,
+    .conteudo-educativo,
+    .exemplos-perfumes,
+    .proxima-categoria {
+        padding: 50px 6%;
+    }
+
+    .categoria-hero h1 {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .categoria-hero p {
+        font-size: 17px;
+    }
+
+    .voltar {
+        margin-bottom: 40px;
+    }
+
+    .caracteristicas,
+    .perfumes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .perfume-imagem {
+        height: 280px;
+    }
+
+    .conteudo-educativo > p {
+        font-size: 16px;
+    }
+
+}
+/* Responsividade da anatomia */
+
+@media (max-width: 768px) {
+
+    .piramide-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .piramide {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .concentracoes {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Responsividade do glossário */
+
+@media (max-width: 1024px) {
+
+    .glossario-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .glossario-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Responsividade da coleção */
+
+@media (max-width: 1024px) {
+
+    #lista-colecao {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #lista-colecao {
+        grid-template-columns: 1fr;
+    }
+
+    .colecao-estatisticas {
+        gap: 25px;
+    }
+
+    .colecao-estatisticas strong {
+        font-size: 32px;
+    }
+
+    .colecao-estatisticas span {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .filtros-colecao {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filtro {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+
+}
+/* ========================================
+   CORREÇÕES FINAIS DO MENU RESPONSIVO
+======================================== */
+
+/* Desktop */
+
+@media (min-width: 769px) {
+
+    .menu-mobile {
+        display: none;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navegacao {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 6%;
+        gap: 0;
+    }
+
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        color: #ffffff;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .menu-mobile:focus-visible {
+        outline: 2px solid #ffffff;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+        margin: 15px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px 0;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Corrigir largura da fotografia */
+
+    .apresentacao-imagem {
+        width: 100%;
+        max-width: none;
+    }
+
+}

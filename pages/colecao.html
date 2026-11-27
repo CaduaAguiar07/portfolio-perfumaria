@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Coleção | Carlos Eduardo</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <script src="../js/script.js" defer></script>
+    <script src="../js/colecao.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <nav class="navegacao">
+
+            <a href="../index.html" class="logo">Carlos Eduardo.</a>
+
+            <button class="menu-mobile"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu">☰</button>
+
+            <ul class="menu" id="menu">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html#universo">Perfumaria</a></li>
+                <li><a href="anatomia.html">Anatomia</a></li>
+                <li><a href="glossario.html">Glossário</a></li>
+                <li><a href="colecao.html">Minha coleção</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="categoria-hero">
+
+            <a href="../index.html" class="voltar">← Página inicial</a>
+
+            <span class="subtitulo">MINHA IDENTIDADE OLFATIVA</span>
+
+            <h1>Minha coleção.</h1>
+
+            <p>
+                Mais do que fragrâncias, minha coleção representa
+                experiências, descobertas e diferentes formas
+                de expressão através da perfumaria.
+            </p>
+
+            <div class="colecao-estatisticas">
+
+                <article>
+                    <strong>15</strong>
+                    <span>Fragrâncias</span>
+                </article>
+
+                <article>
+                    <strong>03</strong>
+                    <span>Categorias</span>
+                </article>
+
+                <article>
+                    <strong>08</strong>
+                    <span>Marcas</span>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="exemplos-perfumes">
+
+            <span class="etiqueta">ACERVO PESSOAL</span>
+
+            <h2>Explore minha coleção.</h2>
+
+            <div class="filtros-colecao"
+                 role="group"
+                 aria-label="Filtrar perfumes por categoria">
+
+                <button class="filtro ativo"
+                        data-categoria="todos"
+                        aria-pressed="true">
+                    Todos (15)
+                </button>
+
+                <button class="filtro"
+                        data-categoria="arabes"
+                        aria-pressed="false">
+                    Árabes (8)
+                </button>
+
+                <button class="filtro"
+                        data-categoria="designers"
+                        aria-pressed="false">
+                    Designers (2)
+                </button>
+
+                <button class="filtro"
+                        data-categoria="nacionais"
+                        aria-pressed="false">
+                    Nacionais (5)
+                </button>
+
+            </div>
+
+            <p id="contador-colecao" aria-live="polite">
+                Exibindo 15 fragrâncias
+            </p>
+
+            <div class="perfumes-grid" id="lista-colecao"></div>
+
+            <noscript>
+                Ative o JavaScript para visualizar a coleção.
+            </noscript>
+
+        </section>
+
+        <section class="proxima-categoria">
+
+            <span>UNIVERSO DA PERFUMARIA</span>
+
+            <h2>Uma coleção em constante evolução.</h2>
+
+            <p>
+                Cada fragrância representa uma nova descoberta
+                e uma oportunidade de conhecer diferentes
+                culturas, matérias-primas e propostas olfativas.
+            </p>
+
+            <a href="../index.html" class="botao">
+                Voltar ao início →
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <h3>Carlos Eduardo.</h3>
+        <p>Engenharia de Software | Perfumaria</p>
+        <p>Projeto acadêmico de Desenvolvimento Front-end para Web.</p>
+        <p>&copy; 2026 Carlos Eduardo.</p>
+    </footer>
+
+</body>
+</html>
